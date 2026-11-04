@@ -1,3 +1,5 @@
+##### ARITHMETIC #####
+
 def ADD(x, y):
     return x + y
 
@@ -15,6 +17,8 @@ def MOD(x, y):
     while inc > y:
         inc = inc - y
     return inc
+
+##### BOOLEAN #####
 
 def AND(x,y):
     if x and y:
@@ -52,17 +56,13 @@ def NOR(x,y):
     else: 
         return False 
 
-def XOR(x,y):
-    if (x and not y) or (not x and y):
-        return True
-    else: 
-        return False 
-
 def XNOR(x,y):
     if (x and y) or (not x and not y):
         return True
     else: 
         return False 
+
+##### CONVERSIONS #####
 
 def BIN_TO_DEC(x):
     val = 1
@@ -124,5 +124,3 @@ def DEC_TO_HEX(x):
         x = x - ((16**(inc-1))*val)
         inc = inc - 1
     return result
-    
-print(DEC_TO_HEX(1739))
