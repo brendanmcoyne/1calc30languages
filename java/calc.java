@@ -75,12 +75,12 @@ public class calc {
             
     }
 
-    public static String DEC_TO_BIN(int x) {
+    public static int DEC_TO_BIN(int x) {
         String result = "";
         int val = x;
 
         if (val == 0) {
-            return "0";
+            return 0;
         }
 
         while (val > 0) {
@@ -91,7 +91,7 @@ public class calc {
             }
             val = val / 2;
         }
-        return result;
+        return Integer.parseInt(result);
     }
 
     public static String DEC_TO_HEX(int x) {
@@ -133,6 +133,8 @@ public class calc {
     }
 
     public static void main(String[] args) {
-        
+        System.out.println(DIV(10,3));
     }
 }
+
+

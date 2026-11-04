@@ -45,7 +45,7 @@ def NAND(x,y):
         return False 
 
 def XOR(x,y):
-    if (x and y) or (not x and not y):
+    if (x and not y) or (not x and y):
         return True
     else: 
         return False  
@@ -93,7 +93,7 @@ def DEC_TO_BIN(x):
             result = "0" + result
         val = val // 2
 
-    return result   
+    return int(result)  
 
 def DEC_TO_HEX(x):
     result = ""
@@ -124,3 +124,5 @@ def DEC_TO_HEX(x):
         x = x - ((16**(inc-1))*val)
         inc = inc - 1
     return result
+
+print(DIV(10,3))
