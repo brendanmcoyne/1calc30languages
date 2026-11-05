@@ -18,6 +18,9 @@ def MOD(x, y):
         inc = inc - y
     return inc
 
+def EXP(x, y):
+    return x**y
+
 ##### BOOLEAN #####
 
 def AND(x,y):
@@ -80,7 +83,7 @@ def BIN_TO_DEC(x):
     return result
 
 def DEC_TO_BIN(x):
-    if val <= 0:
+    if x <= 0:
         return "0"
     
     result = ""
@@ -125,4 +128,4 @@ def DEC_TO_HEX(x):
         inc = inc - 1
     return result
 
-print(MOD(10,10))
+print(EXP(10,3))

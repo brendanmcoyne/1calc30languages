@@ -16,7 +16,7 @@ function DIV(x, y) {
     return x / y;
 }
 
-function MOD(x,y) {
+function MOD(x, y) {
     inc = x;
     while (inc >= y) {
         inc = inc - y;
@@ -24,6 +24,13 @@ function MOD(x,y) {
     return inc
 }
 
+function EXP(x, y) {
+    result = 1;
+    for (i = 0; i < y; i++) {
+        result *= x;
+    }
+    return result;
+}
 // BOOLEAN
 
 function AND(x,y) {

@@ -4,7 +4,7 @@ SUB 10 5 -> 5
 MUL 10 5 -> 50
 DIV 10 5 -> 2
 MOD 10 3 -> 1
-
+EXP 10 2 -> 100
 BOOLEAN
 AND 1 1  -> 1
 OR 0 1   -> 1

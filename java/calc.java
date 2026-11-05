@@ -25,6 +25,13 @@ public class calc {
         return val;
     }
 
+    public static int EXP(int x, int y) {
+        int result = 1;
+        for (int i = 0; i < y; i++) {
+            result *= x;
+        }
+        return result;
+    }
     // BOOLEAN
 
     public static boolean AND(boolean x, boolean y) {
@@ -134,7 +141,7 @@ public class calc {
     }
 
     public static void main(String[] args) {
-        System.out.println(MOD(10,10));
+        System.out.println(NOT(true));
     }
 }
 

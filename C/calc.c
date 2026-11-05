@@ -30,33 +30,40 @@ int MOD(int x, int y) {
     return inc;
 }
 
+int EXP(int x, int y) {
+    int result = 1;
+    for (int i = 0; i < y; i++) {
+        result *= x;
+    }
+    return result;
+}
 // BOOLEAN
 
-bool AND(int x, int y) {
+bool AND(bool x, bool y) {
     return x && y;
 }
 
-bool OR(int x, int y) {
+bool OR(bool x, bool y) {
     return x || y;
 }
 
-bool NOT(int x) {
+bool NOT(bool x) {
     return !x;
 }
 
-bool XOR(int x, int y) {
+bool XOR(bool x, bool y) {
     return (x && !y) || (!x && y);
 }
 
-bool NAND(int x, int y) {
+bool NAND(bool x, bool y) {
     return !(x && y);
 }
 
-bool NOR (int x, int y) {
+bool NOR(bool x, bool y) {
     return (!x && !y);
 }
 
-bool XNOR (int x, int y) {
+bool XNOR(bool x, bool y) {
     return (x && y) || (!x && !y);
 }
 
@@ -144,6 +151,6 @@ char *DEC_TO_HEX(int x) {
 }
 
 int main() {
-    printf("%s", DEC_TO_HEX(177));
+    printf("%i", NOT(10, 3));
 }   
 

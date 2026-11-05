@@ -2,7 +2,12 @@
     "java.project.sourcePaths": [
         "java"
     ],
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar"
+    ],
     "code-runner.executorMap": {
         "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt -lm && ./$fileNameWithoutExt"
-    }
+    },
+    "editor.occurrencesHighlight": "off",
+    "editor.selectionHighlight": false,
 }
