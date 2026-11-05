@@ -18,7 +18,7 @@ function DIV(x, y) {
 
 function MOD(x,y) {
     inc = x;
-    while (inc > y) {
+    while (inc >= y) {
         inc = inc - y;
     }
     return inc
@@ -93,12 +93,12 @@ function BIN_TO_DEC(x) {
 }
 
 function DEC_TO_BIN(x) {
-    result = "";
-    val = x;
-
-    if (val == 0) {
+    if (x <= 0) {
         return 0;
     }
+
+    result = "";
+    val = x;
 
     while (val > 0) {
         if (val % 2 == 1) {
@@ -147,4 +147,4 @@ function DEC_TO_HEX(x) {
     return result;
 }
 
-console.log(DEC_TO_HEX(258))
+console.log(MOD(10, 10))

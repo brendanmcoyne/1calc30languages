@@ -19,8 +19,9 @@ public class calc {
 
     public static int MOD(int x, int y) {
         int val = x;
-        while (val > y);
+        while (val >= y) {
             val -= y;
+        }   
         return val;
     }
 
@@ -76,12 +77,12 @@ public class calc {
     }
 
     public static int DEC_TO_BIN(int x) {
-        String result = "";
-        int val = x;
-
-        if (val == 0) {
+        if (x <= 0) {
             return 0;
         }
+
+        String result = "";
+        int val = x;
 
         while (val > 0) {
             if (val % 2 == 1) {
@@ -133,7 +134,7 @@ public class calc {
     }
 
     public static void main(String[] args) {
-        System.out.println(DIV(10,3));
+        System.out.println(MOD(10,10));
     }
 }
 

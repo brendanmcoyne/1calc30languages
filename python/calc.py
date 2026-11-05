@@ -14,7 +14,7 @@ def DIV(x, y):
 
 def MOD(x, y):
     inc = x
-    while inc > y:
+    while inc >= y:
         inc = inc - y
     return inc
 
@@ -80,11 +80,11 @@ def BIN_TO_DEC(x):
     return result
 
 def DEC_TO_BIN(x):
+    if val <= 0:
+        return "0"
+    
     result = ""
     val = x
-
-    if val == 0:
-        return "0"
     
     while val > 0:
         if val % 2 == 1:
@@ -125,4 +125,4 @@ def DEC_TO_HEX(x):
         inc = inc - 1
     return result
 
-print(DIV(10,3))
+print(MOD(10,10))
