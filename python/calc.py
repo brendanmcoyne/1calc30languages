@@ -99,7 +99,7 @@ def DEC_TO_BIN(x):
     return int(result)  
 
 def DEC_TO_HEX(x):
-    result = ""
+    result = "0x"
     inc = 1
 
     while (x >= 16**inc):
@@ -128,4 +128,4 @@ def DEC_TO_HEX(x):
         inc = inc - 1
     return result
 
-print(EXP(10,3))
+print(DEC_TO_HEX(79))

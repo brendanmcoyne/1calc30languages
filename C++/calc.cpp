@@ -132,7 +132,7 @@ std::string DEC_TO_HEX(int x) {
         } else {
             result = result + std::to_string(val);
         }
-        x = x - std::pow(16, inc - 1);
+        x = x - (std::pow(16, inc - 1) * val);
         inc--;
     }
     return result;
