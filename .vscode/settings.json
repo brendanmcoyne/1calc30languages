@@ -6,8 +6,11 @@
         "lib/**/*.jar"
     ],
     "code-runner.executorMap": {
-        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt -lm && ./$fileNameWithoutExt"
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt -lm && ./$fileNameWithoutExt",
+        "typescript": "cd \"$dir\" && ./node_modules/.bin/ts-node \"$fileName\""
     },
+    "code-runner.runInTerminal": false,
+    "code-runner.saveFileBeforeRun": true,
     "editor.occurrencesHighlight": "off",
-    "editor.selectionHighlight": false,
+    "editor.selectionHighlight": false
 }

@@ -1,0 +1,8 @@
+node_modules/
+
+tempCodeRunnerFile.*
+
+typescript/*.js
+typescript/*.js.map
+
+*.tsbuildinfo
