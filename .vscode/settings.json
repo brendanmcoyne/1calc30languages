@@ -7,10 +7,17 @@
     ],
     "code-runner.executorMap": {
         "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt -lm && ./$fileNameWithoutExt",
+        "csharp": "cd \"$dir\" && dotnet run",
         "typescript": "cd \"$dir\" && ./node_modules/.bin/ts-node \"$fileName\""
     },
+    "files.exclude": {
+    "**/bin": true,
+    "**/obj": true
+    },
+    
     "code-runner.runInTerminal": false,
     "code-runner.saveFileBeforeRun": true,
     "editor.occurrencesHighlight": "off",
     "editor.selectionHighlight": false
+    
 }
