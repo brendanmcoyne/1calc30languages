@@ -18,6 +18,6 @@
     "code-runner.runInTerminal": false,
     "code-runner.saveFileBeforeRun": true,
     "editor.occurrencesHighlight": "off",
-    "editor.selectionHighlight": false
+    "editor.selectionHighlight": false,
     
 }
