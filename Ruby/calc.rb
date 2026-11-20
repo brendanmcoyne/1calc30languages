@@ -25,6 +25,14 @@ def MOD(x, y)
     inc
 end 
 
+def EXP(x, y)
+    result = 1
+    for i in 1..y do
+        result = result * x
+    end
+    result
+end
+
 ##### BOOLEAN #####
 
 def AND(x, y)
@@ -131,4 +139,4 @@ def DEC_TO_HEX(x)
     end
     result
 end
-print DEC_TO_HEX(258)
+print EXP(10, 3)
