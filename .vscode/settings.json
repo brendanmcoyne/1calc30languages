@@ -8,7 +8,8 @@
     "code-runner.executorMap": {
         "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt -lm && ./$fileNameWithoutExt",
         "csharp": "cd \"$dir\" && dotnet run",
-        "typescript": "cd \"$dir\" && ./node_modules/.bin/ts-node \"$fileName\""
+        "typescript": "cd \"$dir\" && ./node_modules/.bin/ts-node \"$fileName\"",
+        "kotlin": "cd \"$dir\" && /home/brendanmcoyne/.sdkman/candidates/kotlin/current/bin/kotlinc \"$fileName\" -include-runtime -d \"$fileNameWithoutExt.jar\" && java -jar \"$fileNameWithoutExt.jar\""
     },
     "files.exclude": {
     "**/bin": true,

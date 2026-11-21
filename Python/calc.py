@@ -84,7 +84,7 @@ def BIN_TO_DEC(x):
 
 def DEC_TO_BIN(x):
     if x <= 0:
-        return "0"
+        return 0
     
     result = ""
     val = x
