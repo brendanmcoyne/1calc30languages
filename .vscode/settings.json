@@ -9,7 +9,8 @@
         "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt -lm && ./$fileNameWithoutExt",
         "csharp": "cd \"$dir\" && dotnet run",
         "typescript": "cd \"$dir\" && ./node_modules/.bin/ts-node \"$fileName\"",
-        "kotlin": "cd \"$dir\" && /home/brendanmcoyne/.sdkman/candidates/kotlin/current/bin/kotlinc \"$fileName\" -include-runtime -d \"$fileNameWithoutExt.jar\" && java -jar \"$fileNameWithoutExt.jar\""
+        "kotlin": "cd \"$dir\" && /home/brendanmcoyne/.sdkman/candidates/kotlin/current/bin/kotlinc \"$fileName\" -include-runtime -d \"$fileNameWithoutExt.jar\" && java -jar \"$fileNameWithoutExt.jar\"",
+        "swift": "cd \"$dir\" && /home/brendanmcoyne/.local/share/swiftly/bin/swift \"$fileName\"",
     },
     "files.exclude": {
     "**/bin": true,
