@@ -82,7 +82,7 @@ def BIN_TO_DEC(x)
         val = val * 2
     end
 
-    return result
+    result
 end
 
 def DEC_TO_BIN(x)
@@ -139,4 +139,4 @@ def DEC_TO_HEX(x)
     end
     result
 end
-print EXP(10, 3)
+print BIN_TO_DEC(10)

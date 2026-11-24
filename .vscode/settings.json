@@ -13,6 +13,7 @@
         "swift": "cd \"$dir\" && /home/brendanmcoyne/.local/share/swiftly/bin/swift \"$fileName\"",
         "rust": "cd \"$dir\" && rustc \"$fileName\" -o \"$fileNameWithoutExt\" && ./\"$fileNameWithoutExt\"; rm -f \"$fileNameWithoutExt\"",
         "r": "cd \"$dir\" && /usr/bin/Rscript \"$fileName\"",
+        "julia": "cd \"$dir\" && /home/brendanmcoyne/.juliaup/bin/julia \"$fileName\"",
     },
     "files.exclude": {
     "**/bin": true,
