@@ -11,7 +11,8 @@
         "typescript": "cd \"$dir\" && ./node_modules/.bin/ts-node \"$fileName\"",
         "kotlin": "cd \"$dir\" && /home/brendanmcoyne/.sdkman/candidates/kotlin/current/bin/kotlinc \"$fileName\" -include-runtime -d \"$fileNameWithoutExt.jar\" && java -jar \"$fileNameWithoutExt.jar\"",
         "swift": "cd \"$dir\" && /home/brendanmcoyne/.local/share/swiftly/bin/swift \"$fileName\"",
-        "rust": "cd \"$dir\" && rustc \"$fileName\" -o \"$fileNameWithoutExt\" && ./\"$fileNameWithoutExt\"; rm -f \"$fileNameWithoutExt\""
+        "rust": "cd \"$dir\" && rustc \"$fileName\" -o \"$fileNameWithoutExt\" && ./\"$fileNameWithoutExt\"; rm -f \"$fileNameWithoutExt\"",
+        "r": "cd \"$dir\" && /usr/bin/Rscript \"$fileName\"",
     },
     "files.exclude": {
     "**/bin": true,
