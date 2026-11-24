@@ -115,20 +115,15 @@ public class calc {
             if (val > 9) {
                 if (val == 10) {
                     result = result + "A";
-                }
-                else if (val == 11) {
+                } else if (val == 11) {
                     result = result + "B";
-                }
-                else if (val == 12) {
+                } else if (val == 12) {
                     result = result + "C";
-                }
-                else if (val == 13) {
+                } else if (val == 13) {
                     result = result + "D";
-                }
-                else if (val == 14) {
+                } else if (val == 14) {
                     result = result + "E";
-                }
-                else if (val == 15) {
+                } else if (val == 15) {
                     result = result + "F";
                 }
             } else {
